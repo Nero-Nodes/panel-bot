@@ -1,3 +1,11 @@
+// -------------------------------
+// github.com/nero-nodes/panel-bot
+// api/api.js
+//
+// Copyright (c) neronodes.net
+// Licensed under the MIT license.
+// -------------------------------
+
 const { getServers } = require('./methods');
 
 class ApiInstance {

@@ -29,8 +29,16 @@ client.login(token);
 client.once('ready', () => {
 	console.log('success: client connected to API');
 	console.log('panel url configured as ' + panel.host);
+});
 
-	panel.getAllServers().then((response) => {
-		console.log(response.meta.pagination.total);
-	});
+client.on('interactionCreate', async interaction => {
+	if (!interaction.isCommand()) return;
+
+	const { commandName } = interaction;
+
+	if (commandName === 'servers') {
+		panel.getAllServers().then((response) => {
+			interaction.reply('looks like there\'s ' + response.meta.pagination.total + ' servers.');
+		});
+	}
 });

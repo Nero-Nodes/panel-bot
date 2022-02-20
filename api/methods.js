@@ -1,3 +1,11 @@
+// -------------------------------
+// github.com/nero-nodes/panel-bot
+// client/methods.js
+//
+// Copyright (c) neronodes.net
+// Licensed under the MIT license.
+// -------------------------------
+
 const ApiRequest = require('./request');
 const ApplicationRequest = require('./application');
 

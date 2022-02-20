@@ -1,3 +1,11 @@
+// -------------------------------
+// github.com/nero-nodes/panel-bot
+// client/request.js
+//
+// Copyright (c) neronodes.net
+// Licensed under the MIT license.
+// -------------------------------
+
 const axios = require('axios');
 const ApplicationRequest = require('./application');
 
