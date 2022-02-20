@@ -1,0 +1,19 @@
+{
+  "name": "panel-bot",
+  "version": "0.0.0",
+  "description": "A Discord bot written to retrieve data from NeroPanel.",
+  "main": "client/index.js",
+  "scripts": {
+    "test": "node tests/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nero-nodes/panel-bot.git"
+  },
+  "author": "Cam White <cam@neronodes.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nero-nodes/panel-bot/issues"
+  },
+  "homepage": "https://github.com/nero-nodes/panel-bot#readme"
+}
