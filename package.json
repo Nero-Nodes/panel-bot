@@ -4,6 +4,7 @@
   "description": "A Discord bot written to retrieve data from NeroPanel.",
   "main": "client/index.js",
   "scripts": {
+    "start": "node client/index.js",
     "test": "node tests/index.js"
   },
   "repository": {
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/nero-nodes/panel-bot#readme",
   "dependencies": {
+    "axios": "^0.26.0",
     "discord.js": "^13.6.0"
   },
   "devDependencies": {
