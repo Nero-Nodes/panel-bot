@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/nero-nodes/panel-bot/issues"
   },
-  "homepage": "https://github.com/nero-nodes/panel-bot#readme"
+  "homepage": "https://github.com/nero-nodes/panel-bot#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0"
+  }
 }

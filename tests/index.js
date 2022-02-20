@@ -6,7 +6,7 @@
 // Licensed under the MIT license.
 // -------------------------------
 
-console.warn('warn: tests are not yet available for this application')
+console.warn('warn: tests are not yet available for this application');
 
-console.error('fatal: exiting application with error code 1')
-process.exit(1)
+console.error('fatal: exiting application with error code 1');
+process.exit(1);
