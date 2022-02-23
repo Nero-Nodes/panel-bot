@@ -14,3 +14,15 @@ exports.getServers = (host, key) => {
 	const req = new ApiRequest(host, key);
 	return req.executeGet('APPLICATION_GET_ALL_SERVERS');
 };
+
+// Create a function for getting users via the Panel API.
+exports.getUsers = (host, key) => {
+	const req = new ApiRequest(host, key);
+	return req.executeGet('APPLICATION_GET_ALL_USERS');
+};
+
+// Create a function for getting nodes via the Panel API.
+exports.getNodes = (host, key) => {
+	const req = new ApiRequest(host, key);
+	return req.executeGet('APPLICATION_GET_ALL_NODES');
+};

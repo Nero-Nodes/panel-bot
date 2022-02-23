@@ -23,6 +23,8 @@ const rest = new REST({ version: '9' }).setToken(token);
 const commands = [
 	// Use SlashCommandBuilder to set a new command.
 	new SlashCommandBuilder().setName('servers').setDescription('Get all available servers on the Panel.'),
+	new SlashCommandBuilder().setName('users').setDescription('Get all available users on the Panel.'),
+	new SlashCommandBuilder().setName('nodes').setDescription('Get all available nodes on the Panel.'),
 ]
 	// Map the comamnd array to JSON.
 	.map(command => command.toJSON());

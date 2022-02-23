@@ -1,4 +1,6 @@
 {
     "token": "",
-    "ownerId": ""
+    "ownerId": "",
+    "guildId": "",
+    "clientId": ""
 }

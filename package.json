@@ -5,7 +5,8 @@
   "main": "client/index.js",
   "scripts": {
     "start": "node client/index.js",
-    "test": "node tests/index.js"
+    "test": "node tests/index.js",
+    "deploy": "node client/deploy.js"
   },
   "repository": {
     "type": "git",

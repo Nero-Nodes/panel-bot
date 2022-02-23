@@ -48,4 +48,22 @@ client.on('interactionCreate', async interaction => {
 			interaction.reply('looks like there\'s ' + response.meta.pagination.total + ' servers.');
 		});
 	}
+
+	// If the command is 'users', make an API request and
+	// return the message to Discord's API.
+	if (commandName === 'users') {
+		panel.getAllUsers().then((response) => {
+			// Send the interaction to Discord.
+			interaction.reply('looks like there\'s ' + response.meta.pagination.total + ' users.');
+		});
+	}
+
+	// If the command is 'nodes', make an API request and
+	// return the message to Discord's API.
+	if (commandName === 'nodes') {
+		panel.getAllNodes().then((response) => {
+			// Send the interaction to Discord.
+			interaction.reply('looks like there\'s ' + response.meta.pagination.total + ' nodes.');
+		});
+	}
 });

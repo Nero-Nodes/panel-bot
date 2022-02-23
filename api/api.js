@@ -7,7 +7,7 @@
 // -------------------------------
 
 // Call the getServers function.
-const { getServers } = require('./methods');
+const { getServers, getUsers, getNodes } = require('./methods');
 
 // Create the ApiInstance class.
 class ApiInstance {
@@ -25,13 +25,39 @@ class ApiInstance {
 	/**
      * Gets a list of servers from the Panel.
      *
-     * @returns {Promise}
+     * @returns { Promise }
      */
 	getAllServers() {
 		return new Promise((res, rej) => {
 			getServers(this.host, this.key).then((response) => {
 				return res(response.data);
-			}).catch(err => rej(this.processError(err)));
+			}).catch(err => rej(console.error(err)));
+		});
+	}
+
+	/**
+     * Gets a list of users from the Panel.
+     *
+     * @returns { Promise }
+     */
+	getAllUsers() {
+		return new Promise((res, rej) => {
+			getUsers(this.host, this.key).then((response) => {
+				return res(response.data);
+			}).catch(err => rej(console.error(err)));
+		});
+	}
+
+	/**
+     * Gets a list of nodes from the Panel.
+     *
+     * @returns { Promise }
+     */
+	getAllNodes() {
+		return new Promise((res, rej) => {
+			getNodes(this.host, this.key).then((response) => {
+				return res(response.data);
+			}).catch(err => rej(console.error(err)));
 		});
 	}
 }
