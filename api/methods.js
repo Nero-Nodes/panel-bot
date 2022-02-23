@@ -6,10 +6,11 @@
 // Licensed under the MIT license.
 // -------------------------------
 
+// Import the ApiRequest constructor.
 const ApiRequest = require('./request');
-const ApplicationRequest = require('./application');
 
+// Create a function for getting servers via the Panel API.
 exports.getServers = (host, key) => {
 	const req = new ApiRequest(host, key);
-	return req.executeGet(ApplicationRequest.GET_ALL_SERVERS);
+	return req.executeGet('APPLICATION_GET_ALL_SERVERS');
 };

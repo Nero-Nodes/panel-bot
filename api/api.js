@@ -6,8 +6,10 @@
 // Licensed under the MIT license.
 // -------------------------------
 
+// Call the getServers function.
 const { getServers } = require('./methods');
 
+// Create the ApiInstance class.
 class ApiInstance {
 
 	/**
@@ -21,7 +23,7 @@ class ApiInstance {
 	}
 
 	/**
-     * Gets a list of servers from your panel, currently this only get the first page but i will add support for grabbing ALL pages with this methods
+     * Gets a list of servers from the Panel.
      *
      * @returns {Promise}
      */
